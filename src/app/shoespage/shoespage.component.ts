@@ -11,11 +11,11 @@ import { CartService } from '../services/cart/cart.service';
   styleUrls: ['./shoespage.component.css']
 })
 export class ShoesComponent implements OnInit {
-food!:Foods;
+shoes!:Shoes;
   constructor(private activeRoute:ActivatedRoute ,private shoesService:ServicesService,private cartService:CartService,private router:Router) { 
     activeRoute.params.subscribe((params)=>{
       if(params['id'])
-      this.food=foodService.getFoodById(params 
+      this.shoes=shoesService.getShoesById(params 
     ['id'])
     })
   }
@@ -23,7 +23,7 @@ food!:Foods;
   ngOnInit(): void {
   }
   addToCart(){
-this.cartService.addToCart(this.food);
+this.cartService.addToCart(this.shoes);
 this.router.navigateByUrl('/cart-page')
 }
 }
