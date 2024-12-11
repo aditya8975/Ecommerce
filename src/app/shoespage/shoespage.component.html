@@ -6,7 +6,7 @@
 
 
     <div *ngIf="food" class="container">
-        <img [src]="food.imageUrl" [alt]="food.name">
+        <img [src]="shoes.imageUrl" [alt]="shoes.name">
         
     </div>
 
@@ -17,7 +17,7 @@
 <div class="details">
     <div class="header">
         <span class="name">
-            {{food.name}}
+            {{shoes.name}}
         </span>
  
     </div>
@@ -34,7 +34,7 @@
     </div>
     <div class="price">
         <span>
-            {{food.price | currency}}
+            {{shoes.price | currency}}
         </span>
     </div>
     <button (click)="addToCart()">Add to Cart</button>
