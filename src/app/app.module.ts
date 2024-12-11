@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { TagsComponent } from './tags/tags.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
-import { FoodpageComponent } from './foodpage/foodpage.component';
+import { ShoespageComponent } from './shoespage/shooespage.component';
 
 @NgModule({
   declarations: [
