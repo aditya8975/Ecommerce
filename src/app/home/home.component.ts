@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServicesService } from '../services/services.service';
-import { Foods } from '../shared/food';
+import { Shoes } from '../shared/shoes';
 import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-home',
@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  foods:Foods[]=[];
+  shoes:Shoes[]=[];
   constructor(private fs:ServicesService ,private router:ActivatedRoute) { 
     
 
