@@ -1,0 +1,120 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+.details, .details2 {
+    flex: 1;
+    min-width: 45%; /* Adjust as needed */
+    max-width: 45%; /* Adjust as needed */
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3rem;
+    padding: 2rem;
+    color: black;
+    margin-left: 1rem;
+}
+
+.details2 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3rem;
+    padding: 2rem;
+    color: black;
+    margin-right: 1rem; /* Adjust margin-right to create space between containers */
+}
+.mothe{
+    display: flex;
+}
+/* Add the rest of your styling for the details and details2 containers here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img{
+    border-radius: 3rem;
+    flex: 1 0;
+    object-fit: cover;
+    height: 30rem;
+    margin: 1rem;
+}
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+    border-radius: 3rem;
+    padding: 2rem;
+    color: black;
+    margin-left: 1rem;
+}
+.details header{
+    display: flex;
+    justify-content: space-between;
+}
+.details.name{
+    font-size: 5rem;
+    font-weight: bold;
+}
+.details .origins{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+
+}
+.details .origins >span{
+    padding: .5rem;
+    font-size: 1.2rem;
+    margin: .5rem .5rem .5rem 0;
+    border-radius: 2rem;
+    background-color: rgb(117, 117, 117);
+    color: white;
+}
+.details .price,.details .price span{
+padding-top: 200px;
+    font-size: 2.8rem;
+    margin: 1rem 1rem 1rem 0;
+    color: green;
+    text-align: center;
+
+}
+
+.details .price::before{
+    content: "price: ";
+    color: rgb(0, 0, 0);
+
+}
+.details button{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem ;
+    border-radius: 10rem;
+outline: none;
+
+}
+.details button :hover{
+    opacity: 2.4;
+    
+}
