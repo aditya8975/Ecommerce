@@ -1,23 +1,23 @@
 import { Injectable } from '@angular/core';
-import { Foods } from '../shared/food';
+import { Shoes } from '../shared/shoes';
 import { Tag } from '../shared/tag';
 @Injectable({
   providedIn: 'root'
 })
 export class ServicesService {
-  static getFoodById(arg0: any): Foods {
+  static getShoesById(arg0: any): Shoes {
     throw new Error('Method not implemented.');
   }
 
   constructor() { }
-  getFoodById(id:number):Foods{
-return this.getAll().find(food =>food.id == id)!;
+  getShoesById(id:number):Shoes{
+return this.getAll().find(shoes =>shoes.id == id)!;
   }
 
 
-getAllFoodByTag(tag:string) :Foods[]{
+getAllShoesByTag(tag:string) :Shoes[]{
 return tag == "All"?
-this.getAll():this.getAll().filter(food=>food.tags?.includes(tag));
+this.getAll():this.getAll().filter(shoes=>shoes.tags?.includes(tag));
 }
 getAllTag():Tag[]{  
 return[
@@ -29,7 +29,7 @@ return[
 
 ];
 }
-  getAll():Foods[]{
+  getAll():Shoes[]{
     return [
      {
       id:1,
