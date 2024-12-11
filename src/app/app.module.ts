@@ -21,7 +21,7 @@ import { ShoespageComponent } from './shoespage/shooespage.component';
          SearchComponent,
          TagsComponent,
          CartPageComponent,
-         FoodpageComponent
+         shoespageComponent
   ],
   imports: [
     BrowserModule,
